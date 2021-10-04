@@ -127,11 +127,13 @@ span {
   color: var(--accent-color);
 }
 
-.contacts-link:hover .contacts-link-mail {
+.contacts-link:hover .contacts-link-mail,
+.contacts-link:focus .contacts-link-mail {
   fill: var(--accent-color);
 }
 
-.contacts-link:hover .contacts-link-phone {
+.contacts-link:hover .contacts-link-phone,
+.contacts-link:focus .contacts-link-phone {
   fill: var(--accent-color);
 }
 
@@ -465,6 +467,19 @@ h1 {
   margin-bottom: 50px;
 }
 
+.clients {
+  /* border: 1px solid #afb1b8; */
+
+  width: 170px;
+  height: 92px;
+}
+
+.clients-link {
+  display: block;
+  width: 170px;
+  height: 92px;
+}
+
 .clients-list {
   list-style: none;
   display: flex;
@@ -472,16 +487,25 @@ h1 {
 
 .clients-logo {
   fill: #afb1b8;
+  padding: 16px 32px;
   border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
 .clients:not(:last-child) {
   margin-right: 30px;
 }
 
+/* .clients-link:hover .clients-logo,
+.clients-link:focus .clients-logo {
+  fill: var(--accent-color);
+} */
+
 .clients-link:hover .clients-logo,
 .clients-link:focus .clients-logo {
   fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
 }
 
 /* ==========CLIENTS========== */
